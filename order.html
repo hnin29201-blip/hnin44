@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Luna Jewel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ 
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Luna Jewel</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+<div class="order-container">
+    <div class="order-form-card">
+        <h2>Complete Your Purchase</h2>
+        <p class="subtitle">Please fill in your details to finalize your order.</p>
+        
+        <form action="#confirm-box1" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Shipping Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="product">Select Product</label>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Choose a piece...</option>
+                        <option value="blush-ring">Blush Diamond Ring - $299</option>
+                        <option value="lavender-necklace">Lavender Pearl Necklace - $249</option>
+                        <option value="peach-earrings">Peach Crystal Earrings - $179</option>
+                        <option value="mint-bracelet">Mint Charm Bracelet - $199</option>
+                        <option value="rose-gold-ring">Rose Gold Halo Ring - $329</option>
+                        <option value="diamond-pendant">Diamond Drop Pendant - $279</option>
+                        <option value="gem-studs">Pastel Gem Studs - $159</option>
+                        <option value="floral-bracelet">Floral Diamond Bracelet - $239</option>
+                    </select>
+                </div>
+
+                <div class="form-group qty">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="" disabled selected>Select payment type...</option>
+                    <option value="credit-card">Credit / Debit Card</option>
+                    <option value="paypal">KBZ Pay</option>
+                    <option value="apple-pay">Wave Pay</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+            </div>
+
+            <button type="submit" class="order-btn1">Place Order Now</button>
+        </form>
+        
+     
+    </div>
+</div>
+
+<div id="confirm-box1" class="modal-overlay1">
+    <div class="modal-content1">
+        <h3>Confirmed Order!</h3>
+        <p>Thank you for your order.</p>
+        <a href="#" class="close-btn1">OK</a>
+    </div>
+</div>
+
+  <footer class="footer">
+    <div class="container">© 2026 Luna Jewel — Pastel Diamond & Jewelry Shop</div>
+  </footer>
+</body>
+</html>
